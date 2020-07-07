@@ -13,8 +13,10 @@ try:
     from pywifi import PyWiFi
     from pywifi import const
     from pywifi import Profile
-except:
+except ImportError:
     print("Installing pywifi")
+except NotImplementedError:
+    print("[-] Error system")
 
 
 # By Brahim Jarrar ~
